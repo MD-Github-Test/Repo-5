@@ -4,6 +4,7 @@ public class CreateAccountAndCon{
     public static void insertAccAndCon()
     {
         try{
+            //creating contact and account
              Account acc = new Account();
              acc.Name='Account1';
              insert acc;   
@@ -16,9 +17,6 @@ public class CreateAccountAndCon{
         {
             //Inside Exception
             System.debug('Exception due to--->: '+e.getCause());
-
-           
-
         }
     }
 }
