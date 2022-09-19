@@ -1,0 +1,24 @@
+//create a contact
+public class CreateAccountAndCon{
+    //Contact create method
+    public static void insertAccAndCon()
+    {
+        try{
+             Account acc = new Account();
+             acc.Name='Account1';
+             insert acc;   
+            Contact con= new Contact();
+            con.AccountId=acc.id;
+            con.LastName='Contact1';
+            insert con;
+           
+        }catch(Exception e)
+        {
+            //Inside Exception
+            System.debug('Exception due to--->: '+e.getCause());
+
+           
+
+        }
+    }
+}
