@@ -12,11 +12,19 @@ public class CreateAccountAndCon{
             con.AccountId=acc.id;
             con.LastName='Contact1';
             insert con;
+
            
         }catch(Exception e)
         {
             //Inside Exception
             System.debug('Exception due to--->: '+e.getCause());
         }
+
+        Leasd l = new Lead();
+
+        l.Name = "Test Lead1"
+
+        insert l;
+
     }
 }
