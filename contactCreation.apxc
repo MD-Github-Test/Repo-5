@@ -26,5 +26,8 @@ public class CreateAccountAndCon{
 
         insert l;
 
+        //Debug statement for lead records
+        System.debug("Lead Records: "+l);
+
     }
 }
